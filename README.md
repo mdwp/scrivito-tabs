@@ -25,9 +25,6 @@ Add this line to your index.js:
 import "scrivito-tabs";
 ```
 
-## Features
-You can choose between two tabs types in the widget configuration form.
-
 ## Development
 
 With `npm run build` you can build the package into `build/`.

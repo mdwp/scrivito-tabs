@@ -75,7 +75,7 @@ const TabbedContent = Scrivito.connect(({ widget, currentTag }) => {
   const tags = widget.get('tags');
 
   const classNames = ['col-12', 'text-center', 'squeezed'];
-  if (currentTag && !tags.includes(currentTag)) { classNames.push('squeezed'); }
+  if (currentTag && tags.includes(currentTag)) { classNames.pop('squeezed'); }
 
   return (
     <div className={ classNames.join(' ') }>

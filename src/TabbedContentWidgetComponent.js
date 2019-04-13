@@ -31,13 +31,13 @@ class TabbedContentComponent extends React.Component {
     const widget = this.props.widget;
     const items = widget.get('items');
 
-    /*if (!items.length) {
+    if (!items.length && Scrivito.isInPlaceEditingActive()) {
       return (
-        <InPlaceEditingPlaceholder center={ true }>
-          Add content in the widget properties.
-        </InPlaceEditingPlaceholder>
+          <h4 className="text-center">
+            Provide content for the tabs in the widget properties.
+          </h4>
       );
-    }*/
+    }
 
     return (
       <div>
